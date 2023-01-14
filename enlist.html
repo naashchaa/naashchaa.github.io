@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="css/enlist/layout.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlist items</title>
+</head>
+<body>
+    <div class="flexrow-main-body">
+        <header>
+            <a href="">My Account</a>
+        </header>
+        <div class="wrapper">
+            <section class="add-image">
+                <img src="resources/default-image.png" alt="" width="100">
+                <label class="label--image-upload">
+                    <input type="file">
+                    Add images
+                </label>
+            </section>
+            <div class="main-body">
+                <label>Enlist item</label>
+                <input type="text" placeholder="Listing name...">
+                <textarea class="textarea--description" cols="30" rows="8" placeholder="Listing description..."></textarea>
+                <section class="quantity-price-area">
+                    <section class="quantity-area">
+                        <label>Quantity</label>
+                        <section class="quantity-input">
+                            <button>-</button>
+                            <input type="number" placeholder="0">
+                            <button>+</button>
+                        </section>
+                    </section>
+                    <section class="price-area">
+                        <label>Price</label>
+                        <input type="number" placeholder="0.00">
+                    </section>                                
+                </section>
+                <textarea class="textarea--description"
+                          cols="30" 
+                          rows="8" 
+                          placeholder="Listing categories..."></textarea>
+            </div>
+            <section class="filler"></section>
+        </div>
+        
+    </div>
+</body>
+</html>

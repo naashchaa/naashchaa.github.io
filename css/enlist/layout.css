@@ -1,0 +1,120 @@
+* {
+    zoom: 1.00;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+
+    height: 100%;
+    width: 100%;
+}
+
+.add-image-enlist-items-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.add-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1 1 auto;
+    width: 25%;
+    margin: 0.5em;
+    position: relative;
+    bottom: 6.15em;
+}
+
+.flexrow-main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 content;
+    height: 100vh;
+    background-color:darkgreen;
+}
+
+.filler {
+    display: flex;
+    flex: 1 1 auto;
+    width: 25%
+}
+
+.main-body {
+    display: flex;
+    flex: 1 1 auto; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    background-color: grey;
+    width: 50vw;
+}
+
+.main-body > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0.3em;    
+}
+
+.textarea--description {
+    resize: none;
+    text-align: left;
+}
+
+.quantity-price-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.quantity-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: flex-start;
+
+    width: 30%;
+}
+
+.quantity-input {
+    display: flex;
+    flex: 0 1 content;
+}
+
+.price-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+input[type=number] {
+    width: 90%;   
+}
+
+input[type=file] {
+    display: none;
+}
+
+/* THIS GOES INTO THE DESIGN FILE */
+.label--image-upload {
+    border: 0.1em solid #FFF;
+    margin: 0.3em;
+    padding: 0.1em 0.2em;
+    cursor: pointer;
+    width: fit-content;
+}
+
