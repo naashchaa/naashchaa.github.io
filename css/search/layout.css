@@ -1,0 +1,60 @@
+.search-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.filters {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.category-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1; 
+
+}
+
+.price-range {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    margin: 10px;
+}
+
+.supplier-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1; 
+}
+
+.rating-range {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 10px;
+    
+}
+
+.range-input-fields {
+    display: grid;  
+}

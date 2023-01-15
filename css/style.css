@@ -1,0 +1,52 @@
+* {
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    box-sizing: border-box;
+    border: 2px solid grey;
+}
+
+header a {
+    padding: 0.5em;
+    border: 1px solid black;
+}
+
+input {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid grey;
+}
+
+:focus, :focus-visible {
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+button {
+    border: 1px solid grey;
+}
+
+.button--quantity-update {
+    box-sizing: border-box;
+    font-family: monospace;
+    height: 100%;
+}
+
+textarea {
+    border: 1px solid grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+

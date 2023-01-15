@@ -1,11 +1,10 @@
-* {
-    zoom: 1.00;
-}
+
 
 .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
+    align-items: center;
 
     height: 100%;
     width: 100%;
@@ -39,7 +38,6 @@
     align-items: center;
     flex: 1 1 content;
     height: 100vh;
-    background-color:darkgreen;
 }
 
 .filler {
@@ -55,7 +53,6 @@
     justify-content: center;
     align-items: stretch;
     height: 100%;
-    background-color: grey;
     width: 50vw;
 }
 
@@ -92,6 +89,7 @@
 .quantity-input {
     display: flex;
     flex: 0 1 content;
+    align-items: center;
 }
 
 .price-area {
