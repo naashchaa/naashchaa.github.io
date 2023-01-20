@@ -17,17 +17,19 @@
         <div class="main-body">
             <section class="registration-area">
                 <h1>Register</h1>
-                <section class="attribute-input-row id-input">
+                <section class="attribute-input-row">
                     <label>Enter your UserID:</label>
                     <input type="text">
                 </section>
-                <section class="attribute-input-row name-input">
+                <section class="attribute-input-row">
                     <label>Enter your name:</label>
-                    <input type="text">
+                    <input type="text" id="name-input" oninput="validate_name()">
+                    <label id="error-name">Required and must contain the alphabet only</label>
                 </section>
-                <section class="attribute-input-row surname-input">
+                <section class="attribute-input-row">
                     <label>Enter your surname:</label>
-                    <input type="text">
+                    <input type="text" id="surname-input" oninput="validate_surname()">
+                    <label id="error-surname">Required and must contain the alphabet only</label>
                 </section>
                 <section class="attribute-input-row address-input">
                     <label>Enter your address:</label>
