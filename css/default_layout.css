@@ -34,5 +34,14 @@ header a {
 .quantity-input {
     display: flex;
     flex: 0 1 content;
-    align-items: center;
+    align-items: center;display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.attribute-input-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2em;
 }
