@@ -17,45 +17,50 @@
         <div class="main-body">
             <section class="registration-area">
                 <h1>Register</h1>
-                <section class="attribute-input-row id-input">
+                <section class="attribute-input-row">
                     <label>Enter your UserID:</label>
-                    <input type="text">
+                    <section class="input-error-wrapper">
+                        <input type="text" id="id-input" oninput="validate_userid()">
+                        <label class="input-error" id="length-error">UserID must be between 5 and 12 characters long.</label>
+                        <label class="input-error" id="format-error">UserID must start with a capital letter and end with a number or a special character.</label>
+                    </section>
+                    
                 </section>
-                <section class="attribute-input-row name-input">
+                <section class="attribute-input-row">
                     <label>Enter your name:</label>
-                    <input type="text">
+                    <input type="text" id="name-input">
                 </section>
-                <section class="attribute-input-row surname-input">
+                <section class="attribute-input-row">
                     <label>Enter your surname:</label>
-                    <input type="text">
+                    <input type="text" id="surname-input">
                 </section>
-                <section class="attribute-input-row address-input">
+                <section class="attribute-input-row">
                     <label>Enter your address:</label>
-                    <input type="text">
+                    <input type="text" id="address-input">
                 </section>
-                <section class="attribute-input-row email-input">
+                <section class="attribute-input-row">
                     <label>Enter your email:</label>
-                    <input type="text">
+                    <input type="text" id="email-input">
                 </section>
-                <section class="attribute-input-row country-input">
+                <section class="attribute-input-row">
                     <label>Enter your country:</label>
-                    <input type="text">
+                    <input type="text" id="country-input">
                 </section>
-                <section class="attribute-input-row zipcode-input">
+                <section class="attribute-input-row">
                     <label>Enter your zipcode:</label>
-                    <input type="text">
+                    <input type="text" id="zipcode-input">
                 </section>
-                <section class="attribute-input-row sex-input">
+                <section class="attribute-input-row">
                     <label>Enter your sex:</label>
-                    <input type="text">
+                    <input type="text" id="sex-input">
                 </section>
-                <section class="attribute-input-row language-input">
+                <section class="attribute-input-row">
                     <label>Enter your language:</label>
-                    <input type="text">
+                    <input type="text" id="language-input">
                 </section>
-                <section class="password-input">
+                <section class="attribute-input-row">
                     <label>Create password:</label>
-                    <input type="text">
+                    <input type="text" id="password-input">
                 </section>
                 <button onclick="location.href = 'sign-in.html'">Register</button>
             </section>

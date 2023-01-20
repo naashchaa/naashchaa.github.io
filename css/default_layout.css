@@ -34,7 +34,7 @@ header a {
 .quantity-input {
     display: flex;
     flex: 0 1 content;
-    align-items: center;display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
@@ -42,6 +42,14 @@ header a {
 .attribute-input-row {
     display: flex;
     justify-content: space-between;
+    flex: 0 1 auto;
     width: 100%;
     gap: 2em;
+}
+
+.input-error-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: min-content;
 }

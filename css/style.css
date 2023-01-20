@@ -48,5 +48,13 @@ textarea {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.input-error {
+    display: none;
+    width: fit-content;
+    font-size: smaller;
+    color: red;
+    padding-bottom: 0.7em;
+}
+
 
 
