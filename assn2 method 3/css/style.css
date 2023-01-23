@@ -25,13 +25,6 @@ input {
     border: 1px solid grey;
 }
 
-select {
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 1px solid grey;
-    width: min-content;
-}
-
 :focus, :focus-visible {
     outline: none;
     box-sizing: border-box;

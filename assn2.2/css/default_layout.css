@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 0 1 content;
+    width: 100%;
+    height: 100%; 
+}
+
+header a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+.flexrow-main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex: 1 1 auto;
+    height: 100vh; 
+}
+
+.main-body {
+    display: flex;
+    flex: 1 1 100%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.quantity-input {
+    display: flex;
+    flex: 0 1 content;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.attribute-input-row {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    width: 100%;
+    gap: 2em;
+}
+
+.input-error-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: min-content;
+}
