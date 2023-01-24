@@ -2,8 +2,8 @@ function validate_userid() {
     let input_field = document.getElementById("id-input");
     let input_text = input_field.value;
 
-    let length_error = document.getElementById("length-error");
-    let format_error = document.getElementById("format-error");
+    let length_error = document.getElementById("username-length-error");
+    let format_error = document.getElementById("username-format-error");
 
     if (!check_length(input_text)) {
         length_error.style.display = "inline-block";

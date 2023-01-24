@@ -47,6 +47,7 @@ header a {
     gap: 2em;
 }
 
+
 .input-error-wrapper {
     display: flex;
     flex-direction: column;
