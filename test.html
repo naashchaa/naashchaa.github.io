@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <a id="id1">some stuff</a>
+        <a id="id2">stuff</a>
+        <script type="text/javascript">
+            function click_handler1() { alert("click_handler1"); }
+            function click_handler2() { alert("click_handler2"); }
+
+            document.getElementById("id1").addEventListener("click", click_handler1, false);
+            document.getElementById("id2").addEventListener("click", click_handler2, false);
+
+        //window.addEventListener("load", setup, false);
+        </script>
+    </body>
+</html>
