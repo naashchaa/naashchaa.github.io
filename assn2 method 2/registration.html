@@ -15,7 +15,14 @@
 <body onclick="validate_keys_pressed('mouseClick')">
     <div class="flexrow-main-body">
         <div class="main-body">
-            <section class="registration-area">
+            <section id="big-brother-logs">
+                <summary>The statistics for this page's sign-up:</summary>
+                <label id="stat-mouse-clicks"></label>
+                <label id="stat-time-spent"></label>
+                <label id="stat-key-presses"></label>
+                <label id="stat-typed-chars"></label>
+            </section>
+            <form class="registration-area">
                 <h1>Register</h1>
                 <section class="attribute-input-row">
                     <label>Enter your UserID:</label>
@@ -322,7 +329,7 @@
                 <section class="attribute-input-row">
                     <label>Enter your sex:</label>
                     <section class="input-error-wrapper">
-                        <select name="sex-select" id="sex-input" required="required" onchange="validate_sex()" onkeypress="validate_keys_pressed('sex')">
+                        <select name="sex-select" id="sex-input" required="required" onkeypress="validate_keys_pressed('sex')">
                             <option value="">Select your sex</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -333,8 +340,8 @@
                 </section>
                 <section class="attribute-input-row">
                     <label>Enter your language:</label>
-                    <select id="language-input" name="languages" onkeypress="validate_keys_pressed('language')">
-                        <option>Select Language</option>
+                    <select id="language-input" name="languages" required="required" onkeypress="validate_keys_pressed('language')">
+                        <option value="">Select Language</option>
                         <option value="af">Afrikaans</option>
                         <option value="sq">Albanian - shqip</option>
                         <option value="am">Amharic - አማርኛ</option>
@@ -484,13 +491,13 @@
                     <input type="text" id="password-input" onkeypress="validate_keys_pressed('password')">
                 </section>
                 <button onclick="handle_event()">Register</button>
-            </section>
+            </form>
             <section class="already-registered-area">
                 <label>Already registered?</label>
                 <button onclick="location.href = '../sign-in.html'">Sign in</button>
             </section>
         </div>
     </div>
-    <script src="scripts/events.js"></script>
+    <script src="../assn2.2/scripts/events.js"></script>
 </body>
 </html>
