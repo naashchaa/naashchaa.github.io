@@ -63,5 +63,8 @@ textarea {
     padding-bottom: 0.7em;
 }
 
-
+#big-brother-logs {
+    display: none;
+    flex-direction: column;
+}
 

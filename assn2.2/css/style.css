@@ -64,7 +64,7 @@ textarea {
 }
 
 
-.big-brother-logs {
+#big-brother-logs {
     display: none;
     flex-direction: column;
 }

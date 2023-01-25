@@ -43,6 +43,51 @@ function check_username_format(input) {
     return startsWithCapital && endsWithSpecial;
 }
 
+function validate_name() {
+    let input_text = document.getElementById("name-input").value;
+    let name_error = document.getElementById("name-error");
+
+    if (!check_name_surname_format(input_text)) {
+        name_error.style.display = "inline-block";
+    }
+    else {
+        name_error.style.display = "none";
+    }
+}
+
+function validate_surname() {
+    let input_text = document.getElementById("surname-input").value;
+    let surname_error = document.getElementById("surname-error");
+
+    if (!check_name_surname_format(input_text)) {
+        surname_error.style.display = "inline-block";
+    }
+    else {
+        surname_error.style.display = "none";
+    }
+}
+
+function check_name_surname_format(input) {
+    const letters = ["A", "B", "C", "D", "E", "F", 
+                     "G", "H", "I", "J", "K", "L", 
+                     "M", "N", "O", "P", "Q", "R", 
+                     "S", "T", "U", "V", "W", "X", 
+                     "Y", "Z", "a", "b", "c", "d", 
+                     "e", "f", "g", "h", "i", "j", 
+                     "k", "l", "m", "n", "o", "p", 
+                     "q", "r", "s", "t", "u", "v", 
+                     "w", "x", "y", "z"];
+    
+    for (i = 0; i < input.length; i++) {
+        if (!letters.includes(input.substring(i, i + 1))) {
+            console.log(input.substring(i, i + 1));
+            return false;
+        }
+    }
+
+    return true;
+}
+
 function validate_email() {
     let input_field = document.getElementById("email-input");
     let input_text = input_field.value;

@@ -22,12 +22,12 @@
                 <label id="stat-key-presses"></label>
                 <label id="stat-typed-chars"></label>
             </section>
-            <form class="registration-area">
+            <form id="form" class="registration-area" onsubmit="return display_statistics()">
                 <h1>Register</h1>
                 <section class="attribute-input-row">
                     <label>Enter your UserID:</label>
                     <section class="input-error-wrapper">
-                        <input type="text" id="id-input" oninput="validate_userid()" onkeypress="validate_keys_pressed('id')">
+                        <input type="text" id="id-input" required="required" oninput="validate_userid()" onkeypress="validate_keys_pressed('id')">
                         <label class="input-error" id="username-length-error">UserID must be between 5 and 12 characters long.</label>
                         <label class="input-error" id="username-format-error">UserID must start with a capital letter and end with a number or a special character.</label>
                     </section>
@@ -35,14 +35,14 @@
                 <section class="attribute-input-row">
                     <label>Enter your name:</label>
                     <section class="input-error-wrapper">
-                        <input type="text" id="name-input" oninput="validate_name()" onkeypress="validate_keys_pressed('name')">
+                        <input type="text" id="name-input" required="required" oninput="validate_name()" onkeypress="validate_keys_pressed('name')">
                         <label class="input-error" id="name-error">Required and must contain the alphabet only.</label>
                     </section>
                 </section>
                 <section class="attribute-input-row">
                     <label>Enter your surname:</label>
                     <section class="input-error-wrapper">
-                        <input type="text" id="surname-input" oninput="validate_surname()" onkeypress="validate_keys_pressed('surname')">
+                        <input type="text" id="surname-input" required="required" oninput="validate_surname()" onkeypress="validate_keys_pressed('surname')">
                         <label class="input-error" id="surname-error">Required and must contain the alphabet only.</label>
                     </section>
                 </section>
@@ -56,7 +56,7 @@
                 <section class="attribute-input-row">
                     <label>Enter your email:</label>
                     <section class="input-error-wrapper">
-                        <input type="text" id="email-input" oninput="validate_email()" onkeypress="validate_keys_pressed('email')">
+                        <input type="text" id="email-input"  required="required" oninput="validate_email()" onkeypress="validate_keys_pressed('email')">
                         <label class="input-error" id="email-format-error">The email format is incorrect.</label>
                     </section>
                 </section>
@@ -490,7 +490,7 @@
                     <label>Create password:</label>
                     <input type="text" id="password-input" onkeypress="validate_keys_pressed('password')">
                 </section>
-                <button onclick="handle_event()">Register</button>
+                <input type="submit" value="Register"/>
             </form>
             <section class="already-registered-area">
                 <label>Already registered?</label>

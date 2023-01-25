@@ -11,7 +11,7 @@
     <title>Register</title>
 </head>
 
-<body>
+<body onclick="validate_keys_pressed('mouseClick')">
     <div class="flexrow-main-body">
         <div class="main-body"> 
             <section id="big-brother-logs">
@@ -21,7 +21,7 @@
                 <label id="stat-key-presses"></label>
                 <label id="stat-typed-chars"></label>
             </section>
-            <form>
+            <form onsubmit="return display_statistics()">
                 <section class="registration-area">
                     <h1>Register</h1>
                     <section class="attribute-input-row">
@@ -37,24 +37,24 @@
                     </section>
                     <section class="attribute-input-row">
                         <label>Enter your name:</label>
-                        <input type="text" id="name-input" required="required" pattern="^[A-Za-z]*$">
+                        <input type="text" id="name-input" required="required" pattern="^[A-Za-z]*$" onkeypress="validate_keys_pressed('name')">
                     </section>
                     <section class="attribute-input-row">
                         <label>Enter your surname:</label>
-                        <input type="text" id="surname-input" required="required" pattern="^[A-Za-z]*$">
+                        <input type="text" id="surname-input" required="required" pattern="^[A-Za-z]*$" onkeypress="validate_keys_pressed('surname')">
                     </section>
                     <section class="attribute-input-row">
                         <label>Enter your address:</label>
-                        <input type="text" id="address-input" required="optional">
+                        <input type="text" id="address-input" required="optional" onkeypress="validate_keys_pressed('address')">
                     </section>
                     <section class="attribute-input-row">
                         <label>Enter your email:</label>
-                        <input type="email" id="email-input" required="required">
+                        <input type="email" id="email-input" required="required" onkeypress="validate_keys_pressed('email')">
                     </section>
                     <section class="attribute-input-row">
                         <label>Enter your country:</label>
                         <!-- Country list lifted from a StackOverflow post: https://stackoverflow.com/questions/53388003/select-country-dropdown-in-html-page -->
-                        <select name="country-select" required="required">
+                        <select name="country-select" required="required" onkeypress="validate_keys_pressed('country')">
                             <option value="">Select a country...</option>
                             <option value="AFG">Afghanistan</option>
                             <option value="ALA">Åland Islands</option>
@@ -314,12 +314,12 @@
                                 required="required" 
                                 minlength="6" 
                                 maxlength="6"
-                                pattern="([0-9]{4})([a-zA-Z]{2})">
+                                pattern="([0-9]{4})([a-zA-Z]{2})" onkeypress="validate_keys_pressed('zipcode')">
                     </section>
                     <section class="attribute-input-row">
                         <label>Enter your sex:</label>
                         <section class="input-error-wrapper">
-                            <select name="sex-select" id="sex-input" required="required">
+                            <select name="sex-select" id="sex-input" required="required" onkeypress="validate_keys_pressed('sex')">
                                 <option value="">Select your sex</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
@@ -478,9 +478,9 @@
                     </section>
                     <section class="attribute-input-row">
                         <label>Create password:</label>
-                        <input type="text" id="password-input">
+                        <input type="text" id="password-input" onkeypress="validate_keys_pressed('password')">
                     </section>
-                    <button onclick="handle_event()">Register</button>
+                    <input type="submit" value="Register"/>
                 </section>
             </form>
             <section class="already-registered-area">

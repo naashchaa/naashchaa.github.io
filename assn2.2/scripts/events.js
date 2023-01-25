@@ -20,6 +20,7 @@ function display_statistics() {
     document.getElementById("stat-time-spent").textContent = "Total time spent: " + total_time();
     document.getElementById("stat-key-presses").textContent = "Total key presses: " + total_key_presses();
     document.getElementById("stat-typed-chars").textContent = "Number of characters typed: " + total_typed_chars();
+    return false;
 }
 
 function validate_keys_pressed(id) {
@@ -49,7 +50,7 @@ function total_key_presses() {
 function total_typed_chars() {
     let sum = 0;
     for (const [key, value] of Object.entries(pressedKeysCounter)) {
-        if (key != 'mouseClick')
+        if (key != 'mouseClick' && key != 'country' && key != 'sex' && key != 'language')
             sum += validate_characters_number(key);
     }
     return sum;
